@@ -1,0 +1,23 @@
+---
+name: Feature Request
+about: Suggest an idea for a project
+title: "[Feature] "
+labels: enhancement
+assignees: ''
+---
+
+## Problem
+
+A clear description of the problem or need this feature would address.
+
+## Proposed Solution
+
+Describe the solution you'd like to see.
+
+## Alternatives Considered
+
+Any alternative solutions or workarounds you've considered.
+
+## Additional Context
+
+Any other relevant information, mockups, or examples.
