@@ -23,8 +23,8 @@ Each site is its own repo under the [ScalarTek](https://github.com/ScalarTek) or
 ## Branch Strategy
 
 ```
-main        → production (protected, deploy on merge)
-develop     → integration branch (protected, CI required)
+main        → production (deploy on merge)
+develop     → integration branch
 feature/*   → short-lived, branch from develop
 fix/*       → bug fixes, branch from develop
 chore/*     → maintenance, branch from develop
@@ -73,12 +73,12 @@ git push origin feature/my-feature
 # Open a PR targeting develop on GitHub
 ```
 
-PRs to `develop` require the CI build to pass.
-PRs to `main` require CI to pass + 1 approval.
+PRs to `develop` should pass the CI build before merging.
+PRs to `main` should pass CI and ideally get a quick review from a teammate.
 
 ## CI
 
-Every repo runs a GitHub Actions build on push and pull request to `main` and `develop`. The workflow runs `npm ci && npm run build`. PRs cannot be merged if the build fails.
+Every repo runs a GitHub Actions build on push and pull request to `main` and `develop`. The workflow runs `npm ci && npm run build`. Don't merge a PR if the build is failing.
 
 ## Deployment
 
