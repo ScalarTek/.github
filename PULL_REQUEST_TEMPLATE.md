@@ -1,18 +1,15 @@
-## Summary
+## What changed
 
-Brief description of what this PR does.
+<!-- Brief description of what this PR does and why -->
 
-## Changes
+## How to test
 
--
-
-## Related Issues
-
-Closes #
+<!-- Steps to verify the change works as expected -->
 
 ## Checklist
 
-- [ ] Code follows project conventions
-- [ ] Tests added/updated as needed
-- [ ] Documentation updated as needed
-- [ ] CI checks pass
+- [ ] Build passes (`npm run build`)
+- [ ] Tested in browser (desktop + mobile)
+- [ ] No hardcoded content that should be in `lib/site-data.ts`
+- [ ] Design tokens used (no raw hex values in components)
+- [ ] Targets `develop`, not `main`
